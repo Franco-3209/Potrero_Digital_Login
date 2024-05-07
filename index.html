@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="vid-container">
+    <video class="bgvid" autoplay="autoplay" muted="muted" preload="auto" loop>
+      <source
+        src="https://static.vecteezy.com/system/resources/previews/028/594/534/mp4/ai-generative-camp-in-the-jungle-animation-free-video.mp4"
+        type="video/mp4">
+    </video>
+    <div class="inner-container">
+      <div class="box">
+        <h1>Ingreso</h1>
+        <form action="index.php" method="post">
+          <input type="text" name="user" value="" placeholder="Username" autocomplete="current-username" required/>
+          <div class="form-group">
+            <input id="passwordInput" type="password" name="pass" value="" placeholder="Password" autocomplete="current-password" required />
+          </div>
+          <span class="ojito" id="togglePassword"><img src="./resources/ojo.png" alt="Ver Password" onclick="togglePasswordVisibility()"></span>
+          <button type="submit">Login</button>
+        </form>
+        <br>
+        <div>
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label onclick="toggleVideo()" for="checkbox" class="checkbox-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./Js/index.js"></script>
+</body>
+
+</html>
